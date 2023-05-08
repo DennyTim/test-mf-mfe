@@ -1,0 +1,53 @@
+<style>
+    input[type=text] {
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid silver;
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    button {
+        border: 2px solid silver;
+        background-color: white;
+        font-size: 16px;
+        padding: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    button:active {
+        border-color: black;
+    }
+
+    #container {
+        border: 2px darkred dashed;
+        padding: 20px;
+    }
+</style>
+
+<div id="container">
+
+    <div>
+        <img width="50" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+    </div>
+    <h1>Flights</h1>
+    <div>
+        <input type="text" placeholder="From">
+    </div>
+    <div>
+        <input type="text" placeholder="To">
+    </div>
+    <div>
+    </div>
+    <div>
+        <ng-container #vc></ng-container>
+    </div>
+</div>

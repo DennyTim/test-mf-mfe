@@ -62,7 +62,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "mfe-1:build:production"
@@ -71,7 +71,12 @@
               "browserTarget": "mfe-1:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+            "publicHost": "http://localhost:3000",
+            "port": 3000,
+            "extraWebpackConfig": "./webpack.config.js"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
